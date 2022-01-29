@@ -10,6 +10,7 @@ url: https://rex-arnab.github.io/frontend-mentor/
 |2 | NFT Preview Card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/nft-preview-card-component/index.html)|
 |3 | Order summary card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/order-summary-component/index.html)|
 |4 | 3-column preview card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/3-column-preview-card-component/index.html)|
+|5 | FAQ accordion card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/faq-accordion-card-main/index.html)|
 
 ## Author
 

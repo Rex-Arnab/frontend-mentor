@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+main.card {
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
+}
+dd {
+  display: none;
+}
+dt {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
