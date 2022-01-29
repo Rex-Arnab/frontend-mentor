@@ -1,12 +1,14 @@
 # Frontend Mentor - QR code component solution
 
 This Readme File marks my Frontend Mentor Challenge Journey report.
+url: https://rex-arnab.github.io/frontend-mentor/
 
 ================================
 Sl No. | Title | Link
 ================================
-1. | QR Code Component | [Solution Here](qr-code-component/index.html)
-2. | NFT Preview Card | [Solution Here](nft-preview-card-component/index.html)
+1. | QR Code Component | [Solution Here](https://rex-arnab.github.io/frontend-mentor/qr-code-component/index.html)
+2. | NFT Preview Card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/nft-preview-card-component/index.html)
+3. | Order summary card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/order-summary-component/index.html)
 
 ## Author
 
