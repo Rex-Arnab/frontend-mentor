@@ -17,17 +17,49 @@ body {
     hsl(240, 73%, 65%)
   );
 }
+img {
+  width: 100%;
+  height: auto;
+}
 main.card {
   width: 350px;
   background-color: white;
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 dd {
   display: none;
 }
 dt {
   padding: 1rem;
   border-bottom: 1px solid #ccc;
+}
+.hero_section_desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  main.card {
+    flex-direction: row;
+  }
+  main.card {
+    width: 750px;
+  }
+  .hero_section_desktop {
+    display: block;
+  }
+  .hero_section_mobile {
+    display: none;
+  }
 }
