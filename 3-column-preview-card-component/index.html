@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>3-column preview card component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap');
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      padding: 5rem 1rem;
+      width: 100vw;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: hsl(0, 0%, 95%);
+    }
+    .card{
+      width: 250px;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      box-shadow: 2px 2px 5px black;
+    }
+    img{
+      width: 50px;
+    }
+    .card:first-child{
+      border-radius: 10px 10px 0 0;
+    }
+    .card:nth-last-child(2){
+      border-radius: 0 0 10px 10px;
+    }
+    .bg_orange{
+      background-color: hsl(31, 77%, 52%);
+    }
+    .bg_cyan{
+      background-color: hsl(184, 100%, 22%);
+    }
+    .bg_dark_cyan{
+      background-color: hsl(179, 100%, 13%);
+    }
+    .text_orange{
+      color: hsl(31, 77%, 52%);
+    }
+    .text_cyan{
+      color: hsl(184, 100%, 22%);
+    }
+    .text_dark_cyan{
+      color: hsl(179, 100%, 13%);
+    }
+    button{
+      border: 2px solid hsl(0, 0%, 95%);
+      background: hsl(0, 0%, 95%);
+      padding: 1rem;
+      border-radius: 2rem;
+      color: inherit;
+      font-weight: bolder;
+       font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+    button:hover{
+      color: white;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px){
+      body{
+        height: 100vh;
+        flex-direction: row;
+        padding: 1rem;
+      }
+      .card:first-child{
+        border-radius: 20px 0 0 20px;
+      }
+      .card:nth-last-child(2){
+        border-radius: 0 20px 20px 0;
+      }
+    }
+    p{
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    h1.card__title{
+      color: hsl(0, 0%, 95%);
+      text-transform: uppercase;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <article class="card bg_orange">
+    <img src="./images/icon-sedans.svg" alt="icon-sedans">
+    <h1 class="card__title">
+      Sedans
+    </h1>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+      <button class="text_orange">Learn More</button>
+    </article>
+    <article class="card bg_cyan">
+      <img src="./images/icon-suvs.svg" alt="icon-suvs">
+      <h1 class="card__title">
+      SUVs</h1>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+      <button class="text_cyan">Learn More</button>
+    </article>
+    <article class="card bg_dark_cyan">
+      <img src="./images/icon-luxury.svg" alt="icon-luxury">
+      <h1 class="card__title">
+      Luxury</h1>
+    <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+    <button class="text_dark_cyan">Learn More</button>
+  </article>
+</body>
+</html>
