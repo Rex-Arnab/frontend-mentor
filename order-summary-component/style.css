@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+}
+.card {
+  width: 350px;
+  background-color: white;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+main,
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10%;
+  width: 90%;
+}
+
+button {
+  border: none;
+  background: 0;
+  font-weight: bolder;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+button.payment_button {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  color: white;
+}
+
+button.sub_button {
+  border-radius: 10px;
+  color: hsl(224, 23%, 55%);
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.plan span * {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
