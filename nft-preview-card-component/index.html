@@ -45,23 +45,25 @@
       display: block;
     }
     .card__image:hover img {
-      background-color: hsl(178, 100%, 50%);
+      /* background-color: hsl(178, 100%, 50%); */
       opacity: 0.3;
     }
     
     .hover:hover{
       transition:all 0.5s;
+      color: hsl(178, 100%, 50%);   
     }
     
     .card__image:hover .card__image__hover img {
       opacity: 1;
-      transition: opacity 0.5s;
+      transition: all 1s;
     }
-    .card__image__hover{
-      color: hsl(178, 100%, 50%);
-      height: 100%;
-      width: 100%;
-      
+    
+    .card__image:hover .card__image {
+      transition: background-color 1s;
+    }
+    .card__image{
+      background-color: hsl(178, 100%, 50%);   
     }
     .card__image__hover img{
       width: 50px;
