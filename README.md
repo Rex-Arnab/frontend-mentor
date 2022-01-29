@@ -4,12 +4,12 @@ This Readme File marks my Frontend Mentor Challenge Journey report.
 url: https://rex-arnab.github.io/frontend-mentor/
 
 
-Sl No. | Title | Link
-=========
-1. | QR Code Component | [Solution Here](https://rex-arnab.github.io/frontend-mentor/qr-code-component/index.html)
-2. | NFT Preview Card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/nft-preview-card-component/index.html)
-3. | Order summary card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/order-summary-component/index.html)
-4. | 3-column preview card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/3-column-preview-card-component/index.html)
+| Sl No | Title | Link |
+| ----------- | ----------- | ----------- |
+|1 | QR Code Component | [Solution Here](https://rex-arnab.github.io/frontend-mentor/qr-code-component/index.html)|
+|2 | NFT Preview Card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/nft-preview-card-component/index.html)|
+|3 | Order summary card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/order-summary-component/index.html)|
+|4 | 3-column preview card | [Solution Here](https://rex-arnab.github.io/frontend-mentor/3-column-preview-card-component/index.html)|
 
 ## Author
 
