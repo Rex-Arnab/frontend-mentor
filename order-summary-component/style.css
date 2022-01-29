@@ -74,15 +74,29 @@ button.payment_button {
   color: white;
 }
 
+button.payment_button:hover {
+  background-color: hsl(245, 75%, 60%);
+  cursor: pointer;
+}
+
 button.sub_button {
   border-radius: 10px;
   color: hsl(224, 23%, 55%);
   font-weight: bolder;
 }
+button.sub_button:hover {
+  color: hsl(224, 23%, 25%);
+  cursor: pointer;
+}
 
 a {
   text-decoration: underline;
   color: blue;
+}
+a:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 .plan span * {
