@@ -54,7 +54,7 @@ button {
   background: hsl(0, 0%, 95%);
   padding: 1rem;
   border-radius: 2rem;
-  color: inherit;
+  color: currentcolor;
   font-weight: bolder;
   font-family: "Anton", sans-serif;
   font-weight: 400;
