@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <title>Blog preview card</title>
+
+  <style>
+    *:root {
+      --yellow: hsl(47, 88%, 63%);
+      --white: hsl(0, 0%, 100%);
+      --grey: hsl(0, 0%, 50%);
+      --black: hsl(0, 0%, 7%);
+
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: var(--yellow);
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    section.wrapper {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--grey);
+      box-shadow: 10px 10px 0px 0 rgba(0, 0, 0, 1);
+      max-width: 300px;
+    }
+
+    .main-image {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .badge {
+      background-color: var(--yellow);
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+    }
+
+    .timeago {
+      color: var(--grey);
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: var(--grey);
+      font-weight: 400;
+      padding: 0.5rem 0;
+    }
+
+    #user-profile-card {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+    }
+
+    #user-profile-card img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    #user-profile-card span {
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="wrapper">
+    <img src="./assets/images/illustration-article.svg" alt="illustration-article" class="main-image" />
+
+    <div class="badge">Learning</div>
+    <p class="timeago">Published 21 Dec 2023</p>
+
+    <h1>HTML & CSS foundations</h1>
+
+    <p class="description">These languages are the backbone of every website, defining structure, content, and
+      presentation.</p>
+
+    <div id="user-profile-card">
+      <img src="./assets/images/image-avatar.webp" alt="Greg Hooper" />
+      <span>Greg Hooper</span>
+    </div>
+
+
+  </section>
+
+
+</body>
+
+</html>
