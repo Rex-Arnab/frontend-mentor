@@ -16,6 +16,7 @@ url: https://rex-arnab.github.io/frontend-mentor/
 | 8     | Article Preview Card Component | [Solution Here](https://rex-arnab.github.io/frontend-mentor/article-preview-component-master/index.html)  |
 | 9     | Contact Form Main 2           | [Solution Here](https://rex-arnab.github.io/frontend-mentor/contact-form-main-2/index.html)       |
 | 10   |  Blog Preview Card          | [Solution Here](https://rex-arnab.github.io/frontend-mentor/blog-preview-card-main/index.html)       |
+| 11  |  Social Links Profile          | [Solution Here](https://rex-arnab.github.io/frontend-mentor/social-links-profile-main/index.html)       |
 
 
 ## Author
