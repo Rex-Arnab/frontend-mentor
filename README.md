@@ -14,6 +14,7 @@ url: https://rex-arnab.github.io/frontend-mentor/
 | 6     | Profile Card Component         | [Solution Here](https://rex-arnab.github.io/frontend-mentor/profile-card-component-main/index.html)       |
 | 7     | Stats Preview Card Component   | [Solution Here](https://rex-arnab.github.io/frontend-mentor/stats-preview-card-component-main/index.html) |
 | 8     | Article Preview Card Component | [Solution Here](https://rex-arnab.github.io/frontend-mentor/article-preview-component-master/index.html)  |
+| 9     | Contact Form Main 2           | [Solution Here](https://rex-arnab.github.io/frontend-mentor/contact-form-main-2/index.html)       |
 
 
 ## Author
