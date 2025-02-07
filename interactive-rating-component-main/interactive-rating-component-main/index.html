@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive rating component</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+
+      --text-color: hsl(217, 12%, 63%);
+      --button-color: hsl(25, 97%, 53%);
+    }
+
+    body {
+      background-color: hsl(216, 12%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    #card {
+      background-color: hsl(213, 19%, 18%);
+      padding: 2rem 1rem;
+      width: 320px;
+      flex-direction: column;
+      gap: 1rem;
+      border-radius: 20px;
+      display: none;
+    }
+
+    #card #star {
+      background-color: hsl(218, 9%, 25%);
+      padding: 1rem;
+      border-radius: 50%;
+      width: 50px;
+      display: grid;
+      place-content: center;
+    }
+
+    #card h1 {
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    #card p {
+      color: var(--text-color);
+      line-height: 20px;
+      font-size: 0.9rem;
+    }
+
+    #card main {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+
+    main div {
+      background-color: hsl(218, 9%, 25%);
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: grid;
+      font-weight: bold;
+      place-content: center;
+      color: var(--text-color);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    main div.selected {
+      background-color: white;
+      color: black;
+    }
+
+    button {
+      background-color: var(--button-color);
+      padding: 0.8rem;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    main div:hover {
+      background-color: hsl(25, 97%, 45%);
+      color: black;
+    }
+
+    button:hover {
+      background-color: white;
+    }
+
+    .thankyou img {
+      width: 150px;
+      height: 100%;
+    }
+
+    .thankyou {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .thankyou p {
+      text-align: center;
+    }
+
+    .thankyou #outOf {
+      color: var(--button-color);
+      background-color: hsl(218, 9%, 25%);
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="card" class="rating">
+    <div id="star">
+      <img src="./images/icon-star.svg" alt="star" />
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!</p>
+
+    <main>
+      <div data-id="1">1</div>
+      <div data-id="2">2</div>
+      <div data-id="3">3</div>
+      <div data-id="4">4</div>
+      <div data-id="5">5</div>
+    </main>
+
+    <button>Submit</button>
+  </section>
+
+  <section id="card" class="thankyou">
+    <img src="./images/illustration-thank-you.svg" alt="thankyou" />
+    <div id="outOf"></div>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </section>
+
+  <script>
+    let selected = 2;
+    let screenFlag = 'rating';
+    const ratings = document.querySelectorAll('main div');
+    const submitBtn = document.querySelector('button');
+
+    const ratingScreen = document.querySelector('.rating');
+    const thankYouScreen = document.querySelector('.thankyou');
+    const outof = document.querySelector('#outOf');
+
+
+    ratings.forEach(rating => {
+      rating.addEventListener('click', () => {
+        console.log(rating.dataset.id);
+        if (rating.classList.contains('selected')) {
+          ratings.forEach(rating => {
+            rating.classList.remove('selected');
+          })
+        } else {
+          ratings.forEach(rating => {
+            rating.classList.remove('selected');
+          })
+          rating.classList.add('selected');
+          selected = rating.dataset.id;
+        }
+      })
+    })
+
+    if (screenFlag === 'thankyou') {
+      ratingScreen.style.display = 'none';
+      thankYouScreen.style.display = 'flex';
+    } else {
+      ratingScreen.style.display = 'flex';
+      thankYouScreen.style.display = 'none';
+    }
+
+    outof.innerHTML = `You rated us ${selected} out of 5`;
+    submitBtn.addEventListener('click', () => {
+      if (selected) {
+        ratingScreen.style.display = 'none';
+        thankYouScreen.style.display = 'flex';
+        outof.innerHTML = `You rated us ${selected} out of 5`;
+      } else {
+        alert('Please select a rating');
+      }
+    })
+
+
+  </script>
+</body>
+
+</html>
