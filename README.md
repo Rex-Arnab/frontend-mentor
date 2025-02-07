@@ -17,11 +17,12 @@ url: https://rex-arnab.github.io/frontend-mentor/
 | 9     | Contact Form Main 2           | [Solution Here](https://rex-arnab.github.io/frontend-mentor/contact-form-main-2/index.html)       |
 | 10   |  Blog Preview Card          | [Solution Here](https://rex-arnab.github.io/frontend-mentor/blog-preview-card-main/index.html)       |
 | 11  |  Social Links Profile          | [Solution Here](https://rex-arnab.github.io/frontend-mentor/social-links-profile-main/index.html)       |
+| 12  |  Interactive rating component     | [Solution Here](https://rex-arnab.github.io/frontend-mentor/interactive-rating-component-main/index.html)       |
 
 
 ## Author
 
-- Website - [Rex](http://1biteblog.com/)
+- Website - [Rex](https://devhives.in/)
 - Frontend Mentor - [@Rex-Arnab](https://www.frontendmentor.io/profile/Rex-Arnab)
 - Twitter - [@arnab00725](https://twitter.com/arnab00725)
 - Linkedin - [@arnab-biswas-007](https://www.linkedin.com/in/arnab-biswas-007/)
